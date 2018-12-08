@@ -1,0 +1,128 @@
+.crumble button {
+  border: none;
+  width: 1.6rem;
+  height: .8rem;
+  float: right;
+  border-radius: .13rem;
+  margin-top: .07rem;
+  margin-right: .27rem;
+  background: linear-gradient(#cccccc, #ffffff);
+  font-size: .34rem;
+}
+.particulars {
+  width: 100%;
+  background-color: #fff;
+}
+.particulars .particulars_tltie {
+  width: 100%;
+  height: 2rem;
+  padding: .53rem .67rem 0;
+  text-align: center;
+}
+.particulars .particulars_tltie p {
+  padding: 0;
+  margin: 0;
+  font-size: .48rem;
+}
+.particulars .particulars_img {
+  width: 100%;
+  margin-top: .4rem;
+  position: relative;
+}
+.particulars .particulars_img img {
+  width: 4.27rem;
+  height: 4.27rem;
+  margin: 0 auto;
+}
+.particulars .particulars_img .collect {
+  width: 1.13rem;
+  background-color: #91d701;
+  text-align: center;
+  line-height: 1.13rem;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  bottom: .03rem;
+  right: .67rem;
+}
+.particulars .detail {
+  width: 100%;
+  height: .93rem;
+  border-bottom: 1px solid #b32b00;
+  border-top: 1px solid #b32b00;
+  margin-top: .27rem;
+  line-height: .93rem;
+  text-align: center;
+}
+.particulars .detail a {
+  width: 33.33%;
+  float: left;
+  color: #000;
+  border-right: 1px solid #b32b00;
+  background-color: #ffc833;
+}
+.particulars .detail a:first-child {
+  background-color: #ff9b19;
+}
+.particulars .detail a:last-child {
+  border-right: none;
+}
+table {
+  width: 100%;
+  height: 1.07rem;
+  line-height: 1.07rem;
+}
+table tr {
+  width: 100%;
+}
+table tr .p_pic {
+  width: .67rem;
+}
+table tr .p_pic a {
+  width: .4rem;
+  height: .47rem;
+  margin-top: .35rem;
+  margin-left: .13rem;
+}
+table tr .red {
+  width: 2rem;
+  color: red;
+}
+table tr .center {
+  width: 1.33rem;
+}
+/*网友评价*/
+.friend {
+  width: 100%;
+  background-color: #fff;
+}
+.friend .friend_title {
+  width: 100%;
+  height: .93rem;
+  background-color: #dbdbdb;
+  line-height: .93rem;
+  text-align: center;
+}
+.friend li {
+  padding: .13rem;
+  font-size: .21rem;
+}
+.friend li .li_title {
+  width: 100%;
+}
+.friend li .destination {
+  width: 100%;
+}
+.friend .examine1 {
+  padding: .13rem;
+}
+.friend .examine1 a {
+  width: 100%;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  background: linear-gradient(#f1f1f1, #d4d4d4);
+  color: #000;
+  border-radius: .13rem;
+  border: 1px solid #c4c4c4;
+}

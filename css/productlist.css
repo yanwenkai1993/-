@@ -1,0 +1,44 @@
+.crumble button {
+  border: none;
+  width: 1.6rem;
+  height: .8rem;
+  float: right;
+  border-radius: .13rem;
+  margin-top: .07rem;
+  margin-right: .27rem;
+  background: linear-gradient(#cccccc, #ffffff);
+  font-size: .34rem;
+}
+/*电视内容*/
+.television {
+  width: 100%;
+  background-color: #fff;
+}
+.television li {
+  padding: .27rem .13rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+.television li .img {
+  width: 2.67rem;
+}
+.television li .img img {
+  height: 100%;
+}
+.television li .tltie {
+  margin-left: .13rem;
+  width: 6.93rem;
+}
+.television li .tltie h3 {
+  font-size: .33rem;
+  color: #000;
+}
+.television li .tltie p.red {
+  margin-top: .27rem;
+  font-size: .3rem;
+  color: red;
+}
+.television li .tltie p {
+  margin-top: .13rem;
+  font-size: .2rem;
+  color: #a1a1a1;
+}

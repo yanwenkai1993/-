@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>品牌大全</title>
+  <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
+  <link rel="stylesheet" href="./css/brandRitle.css">
+</head>
+<script src="./lib/flexible/flexible.js"></script>
+
+<body>
+  <!-- 大盒子 -->
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header">
+      <div class="logo"></div>
+      <div class="icon_app"></div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mm_search">
+      <input type="text" placeholder="请输入你想比的价格">
+      <button>搜索</button>
+    </div>
+
+    <!-- 面包屑导航 -->
+    <div class="crumble">
+      <a href="#">首页></a>
+      <a href="#">全部分类></a>
+    </div>
+    <!--热门品牌 -->
+    <div class="hot">
+      <p>热门品牌排行</p>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="mm_category">
+      <ul class="category_title">
+        <li>
+          <a href="javascript:;">大家电
+            <i class="fa fa-chevron-down"></i>
+          </a>
+        </li>
+       
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="mm_login clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" class="bd"><i class="fa fa-arrow-circle-o-up"></i>返回顶部</a>
+      </div>
+      <div class="mm_download">
+        <p class="clearfix"><a href="#" class="red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p class="tp">m.manmanbuy.com</p>
+      </div>
+
+    </div>
+
+  </div>
+<script type="text/html"  id="branTpl">
+  {{each result v i}}
+  <li>
+    <a href="brand.html?brandtitleid={{v.brandTitleId}}" >{{v.brandTitle}}
+      <i class="fa fa-chevron-down"></i>
+    </a>
+  </li>
+
+  {{/each}}
+</script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/template/template-web.js"></script>
+  <script src="./js/brandTitle.js"></script>
+</body>
+
+</html>

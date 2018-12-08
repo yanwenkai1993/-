@@ -1,0 +1,27 @@
+.info h3 {
+  font-size: .5rem;
+  color: black;
+  font-weight: 700;
+}
+.info .time_mm {
+  margin: .4rem 0;
+  font-size: .35rem;
+  color: #958e8c;
+}
+.info .price {
+  width: 100%;
+}
+.info .price img {
+  float: right;
+  width: 2.67rem;
+}
+.info .price p {
+  font-size: .34rem;
+}
+.info .img_aa {
+  width: 6.13rem;
+}
+.info .theme {
+  width: 6rem;
+  margin-top: .27rem;
+}

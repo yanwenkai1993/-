@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+<script src="./lib/flexible/flexible.js"></script>
+
+<body>
+  <!-- 大盒子 -->
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header">
+      <div class="logo"></div>
+      <div class="icon_app"></div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mm_search">
+      <input type="text" placeholder="请输入你想比的价格">
+      <button>搜索</button>
+    </div>
+    <!-- 导航  -->
+    <div class="mm_nav">
+      <ul class="clearfix">
+        <li>
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>比价搜索</p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- 推荐区域 -->
+    <div class="mm_recommend clearfix">
+      <h3>超值折扣推荐</h3>
+      <img src="./images/more.png" alt="">
+    </div>
+    <!-- 钻展区域 -->
+    <div class="mm_info">
+      <ul>
+        <li>
+          <a href="#" class="clearfix">
+            <div class="info_left fl">
+              <img src="./images/201610001412282758.jpg" alt="">
+            </div>
+            <div class="info_right fr">
+              <div class="mm_title">
+                移动端凑单品：海天 鲜味 生抽 1.28L <span>10.9元</span>
+              </div>
+              <span class="mm_time">京东商城 | <span>10-25 14:10</span></span><span class="mm_comment">有1人评论</span>
+            </div>
+
+          </a>
+        </li>
+       
+      </ul>
+      <a class="mm_bnt" href="moneyctrl.html"><button> 跟多优惠信息>></button></a>
+    </div>
+    <!-- 品牌排行 -->
+    <div class="mm_recommend clearfix">
+      <h3>品牌排行</h3>
+      <img src="./images/more.png" alt="">
+    </div>
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="mm_login clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" class="bd"><i class="fa fa-arrow-circle-o-up"></i>返回顶部</a>
+      </div>
+      <div class="mm_download">
+        <p class="clearfix"><a href="#" class="red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p class="tp">m.manmanbuy.com</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- 导航模板 -->
+  <script type="text/html" id="indexTpl">
+    {{each result v i}}
+     
+    <li>
+        {{if i >=8 }}
+      <a href={{v.titlehref}} class="hied"  >
+          {{@v.img}}
+        <p>{{v.name}}</p>
+      </a>
+     {{else}}
+     <a href={{v.titlehref}}  id="{{i===7?'bd':''}}">
+        {{@v.img}}
+        <p>{{v.name}}</p>
+      </a>
+       {{/if}}
+    </li>
+
+   {{/each}}
+  </script>
+<!-- 钻展模板 -->
+
+   <script type="text/html" id="infoTpl">
+  
+   {{each  result v i }}
+    <li>
+        <a href="moneyproduct.html?productid={{v.productId}}" class="clearfix">
+          <div class="info_left fl">
+            {{@v.productImg2}}
+          </div>
+          <div class="info_right fr">
+            <div class="mm_title">
+              {{v.productName}} <span>{{v.productPinkage}}</span>
+            </div>
+            <span class="mm_time">{{v.productFrom}} | <span>{{v.productTime}}</span></span><span class="mm_comment">{{v.productComCoun}}</span>
+          </div>
+
+        </a>
+      </li>
+   {{ /each }}
+    
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/template/template-web.js"></script>
+  <script src="./js/index1.js"></script>
+</body>
+
+</html>

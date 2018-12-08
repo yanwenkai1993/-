@@ -1,0 +1,28 @@
+.crumble {
+  width: 100%;
+  height: .93rem;
+  background: linear-gradient(#ffffff, #cccccc);
+  line-height: .93rem;
+  padding-left: .27rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.crumble a {
+  display: inline-block;
+  color: #000;
+}
+.hot {
+  width: 100%;
+  padding: .27rem;
+  background-color: #fff;
+}
+.hot p {
+  width: 100%;
+  height: 1.07rem;
+  background-color: #EDEDED;
+  border: 1px solid #ccc;
+  line-height: 1.07rem;
+  padding-left: .2rem;
+  color: #7c3c2d;
+  font-size: .24rem;
+}

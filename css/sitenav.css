@@ -1,0 +1,26 @@
+.mm_nav {
+  width: 100%;
+  background-color: #fff;
+}
+.mm_nav > ul {
+  width: 6.67rem;
+  margin: 0 auto;
+  padding: .27rem 0;
+}
+.mm_nav > ul a {
+  background-color: #F4F4F4;
+  border: 1px solid #c4c4c4;
+  padding: .11rem .13rem;
+  float: left;
+  margin-right: .13rem;
+  margin-top: .2rem;
+}
+.mm_nav > ul a img {
+  width: .47rem;
+  height: .47rem;
+}
+.mm_nav > ul a span {
+  font-size: .32rem;
+  margin-left: .07rem;
+  color: #000;
+}

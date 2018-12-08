@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>比价</title>
+  <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
+  <link rel="stylesheet" href="./css/bijia.css">
+</head>
+<script src="./lib/flexible/flexible.js"></script>
+
+<body>
+  <!-- 大盒子 -->
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header">
+      <div class="logo"></div>
+      <div class="icon_app"></div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mm_search">
+      <input type="text" placeholder="请输入你想比的价格">
+      <button>搜索</button>
+    </div>
+
+    <!-- 面包屑导航 -->
+    <div class="crumble clearfix">
+
+      <button>筛选</button>
+    </div>
+    <!-- 产品详情 -->
+    <div class="particulars">
+      
+        <div class="particulars_tltie">
+          <p>
+            乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视
+          </p>
+        </div>
+        <div class="particulars_img">
+          <img src="./images/Thumb_2016070014584053581.jpg" alt="">
+          <div class="collect">收藏</div>
+        </div>
+       
+    </div>
+
+    <!-- 网友评价 -->
+    <div class="friend">
+      <div class="friend_title">
+        <p>网友评价</p>
+      </div>
+      <ul>
+        <li class="clearfix">
+          <div class="li_title clearfix">
+            <span class="fl">b***r</span>
+            <span class="fr">2016/10/1</span>
+          </div>
+          <div class="destination clearfix"><span class="fr">购买自：京东商城</span></div>
+          <p>
+            使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+          </p>
+        </li>
+      </ul>
+      <!-- 查看更多评价 -->
+      <div class="examine1">
+          <a href="#">查看跟多评价</a>
+          
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="mm_login clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" class="bd"><i class="fa fa-arrow-circle-o-up"></i>返回顶部</a>
+      </div>
+      <div class="mm_download">
+        <p class="clearfix"><a href="#" class="red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p class="tp">m.manmanbuy.com</p>
+      </div>
+
+    </div>
+
+ 
+  <!-- 面包屑导航 -->
+  <script type="text/html" id="mianbao">
+
+    <a href="index.html">首页></a>
+      <a href="category.html">全部分类></a>
+      {{each result  v  i}}
+      <a href="#">{{v.category}}</a>
+      {{/each}}
+      <button>筛选</button>
+    </script>
+
+  <!-- 详情模板 -->
+  <script type="text/html" id="bijiaTpl">
+    {{each result v i}}
+    <div class="particulars_tltie">
+        <p>
+         {{v.productName}}
+        </p>
+      </div>
+      <div class="particulars_img">
+        {{@v.productImg}}
+        <div class="collect">收藏</div>
+      </div>
+      <div class="detail ">
+          <a href="#">比价购买</a>
+          <a href="#">产品参数</a>
+          <a href="#">评价</a>
+        </div>
+        {{@ v.bjShop}}
+      {{/each}}
+    </script>
+
+    <!-- 网友评价模板 -->
+  <script type="text/html" id="pingTpl">
+   
+   
+        {{each result v i}}
+        <li class="clearfix">
+          <div class="li_title clearfix">
+            <span class="fl">{{v.comName}}</span>
+            <span class="fr">{{v.comTime}}</span>
+          </div>
+          <div class="destination clearfix"><span class="fr">{{v.comFrom}}</span></div>
+          <p>
+            {{v.comContent}}
+          </p>
+        </li>
+        {{/each}}
+    
+
+    
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/template/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/bijia.js"></script>
+</body>
+
+</html>
+
+
